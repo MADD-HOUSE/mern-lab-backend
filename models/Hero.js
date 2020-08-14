@@ -1,4 +1,5 @@
 const mongoose = require('../db/connection');
+
 const HeroSchema = new mongoose.Schema({
 	id: Number,
 	name: String,
@@ -9,3 +10,5 @@ const HeroSchema = new mongoose.Schema({
 	image: String,
 });
 const Hero = mongoose.model('Hero', HeroSchema);
+
+module.exports = Hero;

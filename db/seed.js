@@ -1,8 +1,11 @@
-const Hero = require('./models/Hero');
+// const mongoose = require('./connection');
+
+const Hero = require('../models/Hero');
 const heroes = require('./seed.json');
-Show.remove({})
+
+Hero.remove({})
 	.then(() => {
-		return Show.collection.insert(heroes);
+		return Hero.collection.insert(heroes);
 	})
 	.then(() => {
 		process.exit();
