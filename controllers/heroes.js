@@ -17,6 +17,18 @@ router.post('/', (req, res) => {
 	Hero.create(req.body).then((hero) => res.json(hero));
 });
 
+router.put('/:id', (req, res) => {
+	Hero.findOneAndUpdate({ _id: req.params.id }, req.body, {
+		new: true,
+	}).then((hero) => {
+		res.json(hero);
+	});
+});
 
+router.delete('/:id', (req, res) => {
+	Hero.findOneAndDelete({ _id: req.params.id }).then((deletedHero) => {
+		res.json(deletedHero);
+	});
+});
 
 module.exports = router;
