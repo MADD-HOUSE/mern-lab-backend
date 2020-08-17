@@ -11,12 +11,12 @@ if (process.env.NODE_ENV === 'production') {
 
 mongoose
 	.connect('mongodb://localhost/heroes', {
-		useNewUrlParser: true,
+		useNewUrlParser: true
 	})
-	.then((conn) => {
+	.then(conn => {
 		console.log(`connected to mongodb on ${conn.connections[0].name} db`);
 	})
-	.catch((err) => {
+	.catch(err => {
 		console.error(err);
 	});
 
