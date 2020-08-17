@@ -8,4 +8,8 @@ app.get('/', (req, res) => {
 	res.redirect('/heroes');
 });
 app.use('/heroes', heroesController);
-app.listen(3000, () => console.log('app is running'));
+app.set('port', process.env.PORT || 8000);
+
+app.listen(app.get('port'), () => {
+	console.log(` PORT: ${app.get('port')} `);
+});

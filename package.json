@@ -1,26 +1,27 @@
 {
-  "name": "mern-lab-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^5.10.0",
-    "nodemon": "^2.0.4"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MADD-HOUSE/mern-lab-backend.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MADD-HOUSE/mern-lab-backend/issues"
-  },
-  "homepage": "https://github.com/MADD-HOUSE/mern-lab-backend#readme"
+	"name": "mern-lab-backend",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"express": "^4.17.1",
+		"mongoose": "^5.10.0",
+		"nodemon": "^2.0.4"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MADD-HOUSE/mern-lab-backend.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MADD-HOUSE/mern-lab-backend/issues"
+	},
+	"homepage": "https://github.com/MADD-HOUSE/mern-lab-backend#readme"
 }
