@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 mongoose
-	.connect('mongodb://localhost/heroes', {
+	.connect(mongoURI, {
 		useNewUrlParser: true
 	})
 	.then(conn => {
