@@ -1,4 +1,4 @@
-const mongoose = require('../db/connection');
+const mongoose = require('../db/Connection');
 
 const HeroSchema = new mongoose.Schema({
 	id: Number,
